@@ -1,0 +1,10 @@
+{
+  "namespace":"com.flink.avroDAO",
+  "type":"record",
+  "name":"StockAvroBean",
+  "fields":[
+    {"name":"user","type":"string"},
+    {"name":"url","type":"string"},
+    {"name":"timestamp","type":"long"}
+  ]
+}
