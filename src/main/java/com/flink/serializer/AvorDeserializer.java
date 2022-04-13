@@ -11,6 +11,7 @@ import java.util.Map;
 /**
  * @Auther ChenShuHong
  * @Date 2022-04-08 10:21
+ * 反序列化
  */
 public class AvorDeserializer <T extends SpecificRecordBase> implements Deserializer<T> {
 

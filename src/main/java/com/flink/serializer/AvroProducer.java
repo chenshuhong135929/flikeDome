@@ -1,6 +1,7 @@
 package com.flink.serializer;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.ByteArraySerializer;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
@@ -17,7 +18,7 @@ public class AvroProducer {
     this.topics = topics;
   }
 
-  public static Properties initconfig(){
+  public static Properties initConfig(){
     Properties config = new Properties();
     config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,BROKER_LIST);//broker_list
     config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());

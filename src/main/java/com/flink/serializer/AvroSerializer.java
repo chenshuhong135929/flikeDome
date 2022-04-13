@@ -14,6 +14,7 @@ import java.util.Map;
 /**
  * @Auther ChenShuHong
  * @Date 2022-04-08 10:20
+ * 序列号
  */
 public class AvroSerializer<T extends SpecificRecordBase> implements Serializer<T> {
   @Override

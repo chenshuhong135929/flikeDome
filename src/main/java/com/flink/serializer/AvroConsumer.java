@@ -1,7 +1,8 @@
 package com.flink.serializer;
 
-import com.fasterxml.jackson.databind.deser.std.StringDeserializer;
+
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.Properties;
 
