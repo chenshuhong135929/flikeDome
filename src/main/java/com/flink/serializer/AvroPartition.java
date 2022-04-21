@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class AvroPartition implements Partitioner {
   @Override
-  public int partition(String topic, Object key, byte[] keybytes, Object value, byte[] valuebytes, Cluster cluster) {
+  public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
     if (key == null) {
       return 0;
     }
